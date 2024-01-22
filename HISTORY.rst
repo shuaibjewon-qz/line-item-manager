@@ -2,6 +2,17 @@
 History
 =======
 
+0.2.12 (2023-10-09)
+-------------------
+* Example script: Activate targeting values by network code, key Id and names (#149)
+
+0.2.11 (2023-09-29)
+-------------------
+* Expanded currency list to include GAM currencies
+* CLI support for custom settings and schema files for advanced users (#138)
+* Upgraded PyYAML and googleads packages (#144)
+* Python 3.11 support (#140)
+
 0.2.10 (2023-08-30)
 -------------------
 * BUG FIX: Error for unsupported GAM API version is not handled properly (#116)
