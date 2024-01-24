@@ -40,8 +40,6 @@ properties:
         type: "object"
         additionalProperties: False
         properties:
-          copies:
-            $ref: "#/definitions/positiveIntegerType"
           sizes:
             $ref: "#/definitions/sizeArray"
           snippet:
@@ -97,7 +95,7 @@ properties:
         type: "string"
       item_type:
         enum:
-          - "price_priority"
+          - "test_price_priority"
           - "standard"
           - "sponsorship"
       priority:
@@ -253,26 +251,17 @@ definitions:
     enum:
       - 'AD_NETWORK'
       - 'ADVERTISER'
-  # Google Ad Manager currency list
   rateCurrencyType:
     enum:
-      - 'AED'
-      - 'ARS'
       - 'AUD'
       - 'BGN'
-      - 'BND'
-      - 'BOB'
       - 'BRL'
       - 'CAD'
       - 'CHF'
-      - 'CLP'
       - 'CNY'
-      - 'COP'
       - 'CZK'
       - 'DKK'
-      - 'EGP'
       - 'EUR'
-      - 'FJD'
       - 'GBP'
       - 'HKD'
       - 'HRK'
@@ -280,38 +269,22 @@ definitions:
       - 'IDR'
       - 'ILS'
       - 'INR'
-      - 'JOD'
+      - 'ISK'
       - 'JPY'
-      - 'KES'
       - 'KRW'
-      - 'LKR'
-      - 'LTL'
-      - 'MAD'
       - 'MXN'
       - 'MYR'
-      - 'NGN'
       - 'NOK'
       - 'NZD'
-      - 'PEN'
       - 'PHP'
-      - 'PKR'
       - 'PLN'
       - 'RON'
-      - 'RSD'
       - 'RUB'
-      - 'SAR'
       - 'SEK'
       - 'SGD'
       - 'THB'
-      - 'TND'
       - 'TRY'
-      - 'TWD'
-      - 'UAH'
       - 'USD'
-      - 'UYU'
-      - 'VEF'
-      - 'VES'
-      - 'VND'
       - 'ZAR'
   sizeArray:
     type: "array"
@@ -329,3 +302,4 @@ definitions:
     required:
       - "height"
       - "width"
+
